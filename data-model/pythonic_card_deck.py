@@ -38,5 +38,9 @@ class FrenchDeck:
             [Card(rank='2', suit='spades'), Card(rank='3', suit='spades'), Card(rank='4', suit='spades')]
             >>> deck[12::13] # pick just the aces
             [Card(rank='A', suit='spades'), Card(rank='A', suit='diamonds'), Card(rank='A', suit='clubs'), Card(rank='A', suit='hearts')]
+            >>> Card('A', 'hearts') in deck
+            True
+            >>> Card('A', 'golds') in deck
+            False
         """
         return self._cards[position]
